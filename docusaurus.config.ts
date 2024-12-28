@@ -67,7 +67,7 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "My Site",
+      title: "Muneer's Site",
       logo: {
         alt: "My Site Logo",
         src: "img/logo.svg",
@@ -80,8 +80,15 @@ const config: Config = {
           label: "Tutorial",
         },
         { to: "/blog", label: "Blog", position: "left" },
+
         {
-          href: "https://github.com/facebook/docusaurus",
+          label: "About Muneer",
+          position: "right",
+          to: "/about/muneer",
+          className: "navbar--get-api-key",
+        },
+        {
+          href: "https://github.com/Muneer-Shafi",
           label: "GitHub",
           position: "right",
         },

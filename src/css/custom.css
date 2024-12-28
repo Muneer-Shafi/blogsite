@@ -1,8 +1,4 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+
 
 /* You can override the default Infima variables here. */
 :root {
@@ -17,6 +13,46 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
+[data-theme='light']{
+    --md-sys-color-background:#fff8f5;
+    --md-sys-color-on-background:#211a16;
+    --md-sys-color-surface:#fff8f5;
+    --md-sys-color-surface-dim:#e5d7d1;
+    --md-sys-color-surface-bright:#fff8f5;
+    --md-sys-color-surface-container-lowest:#ffffff;
+    --md-sys-color-surface-container-low:#fff1ea;
+    --md-sys-color-surface-container:#f9ebe4;
+    --md-sys-color-surface-container-high:#f4e5df;
+    --md-sys-color-surface-container-highest:#eee0d9;
+    --md-sys-color-on-surface:#211a16;
+    --md-sys-color-surface-variant:#f5ded2;
+    --md-sys-color-on-surface-variant:#53443b;
+    --md-sys-color-inverse-surface:#372f2b;
+    --md-sys-color-inverse-on-surface:#fceee7;
+    --md-sys-color-outline:#867369;
+    --md-sys-color-outline-variant:#d8c2b6;
+    --md-sys-color-shadow:#000000;
+    --md-sys-color-scrim:#000000;
+    --md-sys-color-surface-tint:#8d4e21;
+    --md-sys-color-primary:#8d4e21;
+    --md-sys-color-on-primary:#ffffff;
+    --md-sys-color-primary-container:#e1935f;
+    --md-sys-color-on-primary-container:#2f1200;
+    --md-sys-color-inverse-primary:#ffb689;
+    --md-sys-color-secondary:#795742;
+    --md-sys-color-on-secondary:#ffffff;
+    --md-sys-color-secondary-container:#ffd7c0;
+    --md-sys-color-on-secondary-container:#5e3f2b;
+    --md-sys-color-tertiary:#616212;
+    --md-sys-color-on-tertiary:#ffffff;
+    --md-sys-color-tertiary-container:#a8a954;
+    --md-sys-color-on-tertiary-container:#1a1b00;
+    --md-sys-color-error:#ba1a1a;
+    --md-sys-color-on-error:#ffffff;
+    --md-sys-color-error-container:#ffdad6;
+    --md-sys-color-on-error-container:#410002;
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
@@ -26,5 +62,5 @@
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --docusaurus-highlighted-code-line-bg: rgba(210, 63, 63, 0.3);
 }
