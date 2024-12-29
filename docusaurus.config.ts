@@ -5,7 +5,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "Muneer shafi",
   tagline: "Doing Development with Passion",
-  favicon: "img/favicon.ico",
+  favicon: "img/logo.jpg",
 
   // Set the production url of your site here
   url: "https://muneer-Shafi.github.io",
@@ -69,8 +69,9 @@ const config: Config = {
     navbar: {
       title: "Muneer shafi",
       logo: {
-        alt: "My Site Logo",
-        src: "img/logo.svg",
+        alt: "Ms logo",
+        src: "img/logo.jpg",
+
       },
       items: [
         {
