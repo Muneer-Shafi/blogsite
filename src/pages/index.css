@@ -26,7 +26,7 @@
 }
 
 .image-container h1 {
-  color: var(--md-sys-color-on-surface);
+  color: #002741;
   font-size: 3rem;
 }
 .align-center{
@@ -34,8 +34,8 @@
 }
 
 .image-container .subtitle{
-    color: var(--md-sys-color-on-surface-variant);
-    font-weight: normal;
+    color: #002741;
     font-size: 1.5rem;
+    margin-top: -2rem;
     text-align: center;
 }
