@@ -146,3 +146,6 @@
 .text-orange{
     color: var(--md-sys-color-tertiary-container);
 }
+.gap-lg{
+    gap: 2rem;
+}

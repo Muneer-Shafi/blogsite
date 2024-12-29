@@ -5,6 +5,7 @@ import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import "./index.css";
+import PersonalInfo from "../components/Personal/personal";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -12,7 +13,9 @@ function HomepageHeader() {
     <>
       <div className="image-container">
         <div className="rows flex-start title-container">
-          <h1 className="title">{siteConfig.title}</h1>
+          <div className="text-container">
+            <h1 className="title">{siteConfig.title}</h1>
+          </div>
           <p className="subtitle">{siteConfig.tagline}</p>
         </div>
         <img
@@ -21,7 +24,6 @@ function HomepageHeader() {
           className="muneer-img"
         />
       </div>
-      <div className="container"></div>
     </>
   );
 }
@@ -35,6 +37,7 @@ export default function Home(): JSX.Element {
     >
       <HomepageHeader />
       <main>
+        <PersonalInfo />
         <HomepageFeatures />
       </main>
     </Layout>
