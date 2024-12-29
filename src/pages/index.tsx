@@ -6,6 +6,7 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import "./index.css";
 import PersonalInfo from "../components/Personal/personal";
+import SkillSet from "../components/Skills/skillSet";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -36,9 +37,10 @@ export default function Home(): JSX.Element {
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
-      <main>
+      <main className="rows gap-lg">
         <PersonalInfo />
-        <HomepageFeatures />
+
+        <SkillSet />
       </main>
     </Layout>
   );

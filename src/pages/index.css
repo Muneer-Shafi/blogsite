@@ -22,12 +22,15 @@
     width: 600px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
+    border: 1px solid #0b5774;
 }
 
 .image-container h1 {
   color: var(--md-sys-color-on-surface);
   font-size: 3rem;
-
+}
+.align-center{
+    align-items: center;
 }
 
 .image-container .subtitle{
@@ -35,26 +38,4 @@
     font-weight: normal;
     font-size: 1.5rem;
     text-align: center;
-}
-
-
-@keyframes typewriter {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 240px;
-  }
-}
-
-@keyframes blink {
-  0% {
-    border-right-color: rgba(255,255,255,.75);
-    ;
-  }
-
-  100% {
-    border-right-color: transparent;
-  }
 }
