@@ -7,6 +7,7 @@ import Heading from "@theme/Heading";
 import "./index.css";
 import PersonalInfo from "../components/Personal/personal";
 import SkillSet from "../components/Skills/skillSet";
+import Resume from "../components/Resume/resume";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -41,6 +42,8 @@ export default function Home(): JSX.Element {
         <PersonalInfo />
 
         <SkillSet />
+
+        <Resume/>
       </main>
     </Layout>
   );
