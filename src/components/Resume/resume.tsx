@@ -52,7 +52,7 @@ export default function Resume({}: ResumeProps) {
       </div>
 
       <section className="section">
-        <h2 className="section-title">Professional Summary</h2>
+        <h2 className="cols">Professional Summary</h2>
         <p>
           Dynamic and results-driven Full Stack Developer with extensive
           experience in building enterprise-level applications. Specializing in
@@ -65,7 +65,7 @@ export default function Resume({}: ResumeProps) {
       </section>
 
       <section className="section">
-        <h2 className="section-title">Professional Experience</h2>
+        <h2 className="cols">Professional Experience</h2>
         <div className="experience-item">
           <h3 className="job-title">Senior Full Stack Developer</h3>
           <div className="company-info">
@@ -138,12 +138,10 @@ export default function Resume({}: ResumeProps) {
       </section>
 
       <section className="section">
-        <h2 className="section-title">Technical Expertise</h2>
+        <h2 className="cols">Technical Expertise</h2>
         <div className="grid-container col-span-3">
           <div className="rows gap-md">
-            <h3 className="cols gap-sm">
-              Backend Development
-            </h3>
+            <h3 className="cols gap-sm">Backend Development</h3>
             <div className="rows gap-md">
               {backendSkills.map((skill) => (
                 <span key={skill.name}>
@@ -153,9 +151,7 @@ export default function Resume({}: ResumeProps) {
             </div>
           </div>
           <div className="rows gap-md">
-            <h3 className="cols gap-sm">
-              Frontend Development
-            </h3>
+            <h3 className="cols gap-sm">Frontend Development</h3>
             <div className="rows gap-sm">
               {frontendSkills.map((skill) => (
                 <span key={skill.name}>
@@ -165,9 +161,7 @@ export default function Resume({}: ResumeProps) {
             </div>
           </div>
           <div className="rows gap-md">
-            <h3 className="cols gap-sm">
-              Database & Tools
-            </h3>
+            <h3 className="cols gap-sm">Database & Tools</h3>
             <div className="rows gap-sm">
               {otherSkills.map((skill) => (
                 <span key={skill.name}>
@@ -180,7 +174,7 @@ export default function Resume({}: ResumeProps) {
       </section>
 
       <section className="section">
-        <h2 className="section-title">
+        <h2 className="cols">
           Key Achievements & Professional Growth
         </h2>
         <div className="achievements">
@@ -218,7 +212,7 @@ export default function Resume({}: ResumeProps) {
       </section>
 
       <section className="section">
-        <h2 className="section-title">Education & Certifications</h2>
+        <h2 className="cols">Education & Certifications</h2>
         <div className="experience-item">
           <h3 className="job-title">Master's in Computer Application</h3>
           <div className="company-info">
@@ -237,13 +231,13 @@ export default function Resume({}: ResumeProps) {
       </section>
 
       <section className="section">
-        <h2 className="section-title">Languages</h2>
-        <div className="rows gap-md">
-          <div className="cols gap-md">
+        <h2 className="cols">Languages</h2>
+        <div className="rows gap-sm">
+          <div className="cols gap-sm">
             <strong>Urdu/Hindi</strong>
             <i>Native Proficiency</i>
           </div>
-          <div className="cols gap-md">
+          <div className="cols gap-sm">
             <strong>English</strong>
             <i>Professional Working</i>
           </div>
