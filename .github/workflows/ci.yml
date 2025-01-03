@@ -18,5 +18,8 @@ jobs:
 
       - name: Build the Docker image
         run: docker build -t muneer1997/blog-site .
+
+
+
       - name: Push to Docker hub
-        run: docker push muneer1997/blog-site:latest-v1
+        run: docker push muneer1997/blog-site:latest
