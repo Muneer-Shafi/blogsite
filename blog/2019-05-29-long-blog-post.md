@@ -1,7 +1,7 @@
 ---
 slug: long-blog-post
-title: Long Blog Post
-authors: yangshun
+title: Domain driven design 
+authors: muneer
 tags: [hello, docusaurus]
 ---
 

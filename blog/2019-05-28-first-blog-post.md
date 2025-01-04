@@ -1,7 +1,7 @@
 ---
 slug: first-blog-post
-title: First Blog Post
-authors: [slorber, yangshun]
+title:  What's new in Symfony
+authors: [muneer]
 tags: [hola, docusaurus]
 ---
 
