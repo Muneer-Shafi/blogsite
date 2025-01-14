@@ -2,7 +2,7 @@
 slug: GitHub-Actions
 title: GitHub Actions
 authors: muneer
-tags: [hello, docusaurus]
+tags: [Symfony]
 ---
 
 #  Tutorial: Comprehensive Guide

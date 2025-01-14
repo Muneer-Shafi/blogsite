@@ -4,6 +4,7 @@ title: Domain driven design
 authors: muneer
 tags: [DDD, Symfony]
 ---
+
 # Domain-Driven Design (DDD) Approach for Product and Group Management in Symfony
 
 This document explains how to design and implement a **Product** and **Group** relationship using the principles of **Domain-Driven Design (DDD)** in a Symfony application. The example demonstrates creating a `Product` object while adhering to DDD principles.
