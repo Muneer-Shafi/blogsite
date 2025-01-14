@@ -13,7 +13,7 @@ docusaurus:
   permalink: /docusaurus
   description: Docusaurus tag description
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+DDD:
+  label: Domain Driven Design
+  permalink: /domain-driven-design
+  description: Concept of domain driven design
