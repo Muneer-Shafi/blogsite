@@ -25,7 +25,7 @@ export default function Resume({}: ResumeProps) {
       <header className="header">
         <h1>MUNEER SHAFI</h1>
         <div className="subtitle">
-          Senior Full Stack Developer | Architect of Scalable Web Solutions
+          Senior software engineer | Architect of Scalable Web Solutions
           <br />
           Specialized in React, GraphQL, PHP Symfony, and Modern Web
           Technologies
@@ -54,7 +54,7 @@ export default function Resume({}: ResumeProps) {
       <section className="section">
         <h2 className="cols">Professional Summary</h2>
         <p>
-          Dynamic and results-driven Full Stack Developer with extensive
+          Dynamic and results-driven Software engineer with extensive
           experience in building enterprise-level applications. Specializing in
           modern web technologies and architectural patterns, I bring a proven
           track record of delivering innovative solutions that drive business
@@ -67,7 +67,7 @@ export default function Resume({}: ResumeProps) {
       <section className="section">
         <h2 className="cols">Professional Experience</h2>
         <div className="experience-item">
-          <h3 className="job-title">Senior Full Stack Developer</h3>
+          <h3 className="job-title">Senior Software engineer</h3>
           <div className="company-info">
             <span>
               <FaBuilding /> Qbil Software | Srinagar, India
@@ -107,7 +107,7 @@ export default function Resume({}: ResumeProps) {
         </div>
 
         <div className="experience-item">
-          <h3 className="job-title">Full Stack Developer Team Lead</h3>
+          <h3 className="job-title">Software Engineer Team Lead</h3>
           <div className="company-info">
             <span>
               <FaBuilding /> Cloud Innovation Partners | Srinagar, India

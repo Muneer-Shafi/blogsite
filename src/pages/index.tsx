@@ -29,7 +29,7 @@ function HomepageHeader() {
       <div className="fade-in">
         <img
           src={require("@site/static/img/muneer.jpg").default}
-          alt="Muneer Shafi - Full Stack Developer"
+          alt="Muneer Shafi - software Engineer"
           className="muneer-img"
           loading="lazy"
         />
@@ -42,8 +42,8 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} - Full Stack Developer`}
-      description="Muneer Shafi - Passionate Full Stack Developer specializing in modern web technologies, PHP, Symfony, React, and more."
+      title={`${siteConfig.title} - software Engineer`}
+      description="Muneer Shafi - Passionate software Engineer specializing in modern web technologies, PHP, Symfony, React, and more."
     >
       <HomepageHeader />
       <main>

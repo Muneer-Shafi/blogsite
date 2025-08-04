@@ -16,7 +16,7 @@ export default function AboutMuneer({}: Props) {
           <div className="about-me-header">
             <h1 className="">All About Muneer</h1>
 
-            <h2 className="text-orange">Hi, I'm a Full-Stack Developer 🚀</h2>
+            <h2 className="text-orange">Hi, I'm a Software Engineer 🚀</h2>
             <p>
               Passionate about building scalable web applications and APIs with
               modern tools and technologies.
@@ -45,7 +45,7 @@ export default function AboutMuneer({}: Props) {
           <section>
             <h2>📚 Current Focus</h2>
             <p>
-              As a full-stack developer, my current focus lies in crafting
+              As a software engineer, my current focus lies in crafting
               robust and scalable enterprise-level applications. Leveraging
               Symfony API Platform for backend development, I specialize in
               creating RESTful and GraphQL APIs that integrate seamlessly with
