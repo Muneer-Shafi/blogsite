@@ -66,32 +66,42 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
+    colorMode: {
+      defaultMode: "light",
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
     navbar: {
-      title: "Muneer shafi",
+      title: "Muneer Shafi",
       logo: {
-        alt: "Ms logo",
+        alt: "Muneer Shafi Logo",
         src: "img/logo.jpg",
-
       },
+      hideOnScroll: true,
       items: [
         {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Tutorials",
         },
-        { to: "/blog", label: "Blog", position: "left" },
-
         {
-          label: "About Muneer",
+          to: "/blog",
+          label: "Blog",
+          position: "left",
+        },
+        {
+          label: "About",
           position: "right",
           to: "/about/muneer",
-          className: "navbar--get-api-key",
+          className: "navbar--highlight",
         },
         {
           href: "https://github.com/Muneer-Shafi",
           label: "GitHub",
           position: "right",
+          className: "header-github-link",
+          "aria-label": "GitHub repository",
         },
       ],
     },

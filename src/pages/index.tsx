@@ -12,21 +12,29 @@ import Resume from "../components/Resume/resume";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <>
-      <div className="image-container">
-        <div className="rows flex-start title-container">
-          <div className="text-container">
-            <h1 className="title">{siteConfig.title}</h1>
+    <header className="image-container">
+      <div className="container">
+        <div className="rows flex-center title-container fade-in">
+          <div className="text-container text-center">
+            <h1 className="title font-bold">{siteConfig.title}</h1>
+            <p className="subtitle font-medium">{siteConfig.tagline}</p>
+            <div className="mt-4">
+              <Link className="button button--primary button--lg" to="/blog">
+                View My Blog 📝
+              </Link>
+            </div>
           </div>
-          <p className="subtitle">{siteConfig.tagline}</p>
         </div>
+      </div>
+      <div className="fade-in">
         <img
           src={require("@site/static/img/muneer.jpg").default}
-          alt="Muneer"
+          alt="Muneer Shafi - Full Stack Developer"
           className="muneer-img"
+          loading="lazy"
         />
       </div>
-    </>
+    </header>
   );
 }
 
@@ -34,16 +42,28 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title={`${siteConfig.title} - Full Stack Developer`}
+      description="Muneer Shafi - Passionate Full Stack Developer specializing in modern web technologies, PHP, Symfony, React, and more."
     >
       <HomepageHeader />
-      <main className="rows gap-lg">
-        <PersonalInfo />
+      <main>
+        <section className="section section--light">
+          <div className="container">
+            <PersonalInfo />
+          </div>
+        </section>
 
-        <SkillSet />
+        <section className="section section--dark">
+          <div className="container">
+            <SkillSet />
+          </div>
+        </section>
 
-        <Resume/>
+        <section className="section section--light">
+          <div className="container">
+            <Resume />
+          </div>
+        </section>
       </main>
     </Layout>
   );

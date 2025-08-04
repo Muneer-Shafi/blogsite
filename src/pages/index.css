@@ -4,38 +4,104 @@
   background-image: url('../../static/img/mountains.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  display: flex;
-  padding-left: 10rem;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 2rem;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-}
-.title-container{
-    margin-top: -20rem;
-}
-.title,.subtitle{
-    align-self: flex-start;
+  position: relative;
 }
 
-.image-container >img{
-    width: 600px;
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.title-container, .image-container > img {
+  position: relative;
+  z-index: 2;
+}
+
+.title-container{
+    margin-top: -10rem;
+    text-align: center;
+}
+
+.title, .subtitle{
+    align-self: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.image-container > img{
+    width: min(500px, 40vw);
+    max-width: 500px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
-    border: 1px solid #0b5774;
+    border: 4px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.image-container > img:hover {
+    transform: scale(1.05);
 }
 
 .image-container h1 {
-  color: #002741;
-  font-size: 3rem;
-}
-.align-center{
-    align-items: center;
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .image-container .subtitle{
-    color: #002741;
-    font-size: 1.5rem;
-    margin-top: -2rem;
-    text-align: center;
+    color: #ffffff;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-weight: 400;
+    margin-top: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+        padding: 1rem;
+        background-attachment: scroll;
+        text-align: center;
+    }
+
+    .title-container {
+        margin-top: 0;
+        order: 2;
+    }
+
+    .image-container > img {
+        width: min(300px, 60vw);
+        order: 1;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        padding: 0.5rem;
+    }
+
+    .image-container > img {
+        width: min(250px, 70vw);
+    }
+
+    .image-container h1 {
+        font-size: 2rem;
+    }
+
+    .image-container .subtitle {
+        font-size: 1.2rem;
+    }
 }
