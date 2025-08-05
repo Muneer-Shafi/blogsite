@@ -217,7 +217,7 @@ export default function Resume({}: ResumeProps) {
           <h3 className="job-title">Master's in Computer Application</h3>
           <div className="company-info">
             <span>University of Kashmir</span>
-            <span>2017 - 2020</span>
+            <span>2017 - 2021</span>
           </div>
           <div className="certifications">
             <strong>Professional Certifications:</strong>

@@ -75,7 +75,7 @@ const config: Config = {
       title: "Muneer Shafi",
       logo: {
         alt: "Muneer Shafi Logo",
-        src: "img/logo.jpg",
+        src: "img/logo.png",
       },
       hideOnScroll: true,
       items: [

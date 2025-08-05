@@ -7,7 +7,7 @@ export default function AboutMuneer({}: Props) {
       <div className="cols  flex-center">
         <div className="rows w-80 ">
           <img
-            src={require("@site/static/img/muneer.jpg").default}
+            src={require("@site/static/img/brown_muneer.jpg").default}
             alt="Muneer"
             className="muneer-img"
           />
@@ -45,12 +45,12 @@ export default function AboutMuneer({}: Props) {
           <section>
             <h2>📚 Current Focus</h2>
             <p>
-              As a software engineer, my current focus lies in crafting
-              robust and scalable enterprise-level applications. Leveraging
-              Symfony API Platform for backend development, I specialize in
-              creating RESTful and GraphQL APIs that integrate seamlessly with
-              modern frontend frameworks like React. On the frontend, I strive
-              to deliver responsive and dynamic user experiences using React and
+              As a software engineer, my current focus lies in crafting robust
+              and scalable enterprise-level applications. Leveraging Symfony API
+              Platform for backend development, I specialize in creating RESTful
+              and GraphQL APIs that integrate seamlessly with modern frontend
+              frameworks like React. On the frontend, I strive to deliver
+              responsive and dynamic user experiences using React and
               TypeScript, ensuring accessibility and performance. For deployment
               and infrastructure, I employ Docker and NixOS, streamlining
               workflows for development and production environments.

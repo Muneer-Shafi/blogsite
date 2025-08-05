@@ -11,14 +11,14 @@ const educationInfo = [
   {
     college: "University of Kashmir",
     degree: "Masters in Computer Applications",
-    yearOfPassing: "December 2020",
+    yearOfPassing: "March 2021",
     university: "University of Kashmir",
     mode: "Regular",
   },
   {
     college: "University of Kashmir",
     degree: "Bachelors in Computer Applications",
-    yearOfPassing: "january 2017",
+    yearOfPassing: "June 2017",
     university: "University of Kashmir",
     mode: "Regular",
   },
