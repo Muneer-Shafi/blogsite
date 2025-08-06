@@ -303,18 +303,9 @@ body {
   font-family: var(--ifm-font-family-base);
 }
 
-/* Container utilities */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
 
-@media (max-width: 768px) {
-  .container {
-    padding: 0 0.5rem;
-  }
-}
+
+
 
 /* Spacing utilities */
 .mt-0 { margin-top: 0; }
@@ -528,11 +519,7 @@ body {
     no-repeat;
 }
 
-/* Blog improvements */
-.blog-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 
 article {
   border-radius: var(--ifm-border-radius);
@@ -540,6 +527,7 @@ article {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
   border: 1px solid var(--md-sys-color-outline-variant);
+  padding: 1.5rem;
 }
 
 article:hover {
@@ -562,9 +550,7 @@ article:hover {
     display: none;
   }
 
-  .blog-wrapper {
-    padding: 0 1rem;
-  }
+
 }
 
 /* Improved code blocks */
