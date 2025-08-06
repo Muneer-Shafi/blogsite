@@ -91,6 +91,11 @@ const config: Config = {
           position: "left",
         },
         {
+          to: "/travel",
+          label: "Travel",
+          position: "left",
+        },
+        {
           label: "About",
           position: "right",
           to: "/about/muneer",
