@@ -1,14 +1,13 @@
 .personal-card {
   max-width: 800px;
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
   align-self: center;
   background: linear-gradient(135deg, var(--md-sys-color-primary-container) 0%, var(--md-sys-color-secondary-container) 100%);
   color: var(--md-sys-color-on-primary-container);
   border-radius: var(--ifm-border-radius);
   box-shadow: var(--ifm-global-shadow-tl);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 1rem;
 }
 
 .personal-card img{
@@ -16,7 +15,7 @@
   max-width: 300px;
   border-radius: var(--ifm-border-radius);
   object-fit: cover;
-  align-self: flex-start;
+  align-self: center;
   box-shadow: var(--ifm-global-shadow-md);
 }
 
