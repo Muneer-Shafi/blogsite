@@ -575,3 +575,13 @@ html {
   opacity: 0.6;
   pointer-events: none;
 }
+.navbar-sidebar, .navbar-sidebar__backdrop {
+    /* bottom: 0; */
+    opacity: 0;
+    position: fixed;
+    transition-duration: var(--ifm-transition-fast);
+    transition-timing-function: ease-in-out;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+}
