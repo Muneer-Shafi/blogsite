@@ -577,6 +577,8 @@ html {
 }
 .navbar-sidebar, .navbar-sidebar__backdrop {
     /* bottom: 0; */
+    height: 300px;
+    
     opacity: 0;
     position: fixed;
     transition-duration: var(--ifm-transition-fast);
