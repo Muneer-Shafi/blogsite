@@ -7,7 +7,7 @@ export default function AboutMuneer({}: Props) {
       <div className="cols  flex-center">
         <div className="rows w-80 ">
           <img
-            src={require("@site/static/img/brown_muneer.jpg").default}
+            src={require("@site/static/img/on_chair.jpg").default}
             alt="Muneer"
             className="muneer-img"
           />

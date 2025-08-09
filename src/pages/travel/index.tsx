@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import "./travel.css";
+import GidsBangalorePage from "./gids";
 
 const TravelPage: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -155,25 +156,8 @@ const TravelPage: React.FC = () => {
             </div>
           </div>
         </section>
-
-        {/* Photo Gallery */}
-        <section className="gallery-section">
-          <div className="container">
-            <h2 className="section-title">Photo Gallery</h2>
-            <div className="gallery-grid">
-              {[1, 2, 3, 4, 5, 6].map((item) => (
-                <div key={item} className="gallery-item">
-                  <div className="gallery-placeholder">
-                    <span className="gallery-icon">📸</span>
-                    <span>Photo {item}</span>
-                  </div>
-                  <div className="gallery-overlay">
-                    <button className="view-btn">View</button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+        <section>
+          <GidsBangalorePage />
         </section>
 
         {/* Contact Section */}

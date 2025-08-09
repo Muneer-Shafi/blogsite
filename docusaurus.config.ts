@@ -92,7 +92,12 @@ const config: Config = {
         },
         {
           to: "/travel",
-          label: "Travel",
+          label: "Europe",
+          position: "left",
+        },
+        {
+          to: "/banglore",
+          label: "Banglore",
           position: "left",
         },
         {
