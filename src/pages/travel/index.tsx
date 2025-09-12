@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import "./travel.css";
-import GidsBangalorePage from "./gids";
+
 
 const TravelPage: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
