@@ -19,8 +19,8 @@ function HomepageHeader() {
             <h1 className="title font-bold">{siteConfig.title}</h1>
             <p className="subtitle font-medium">{siteConfig.tagline}</p>
             <div className="mt-4">
-              <Link className="button button--primary button--lg" to="/blog">
-                View My Blog 📝
+              <Link className="button button--primary button--lg" to="/about">
+                Software Engineer
               </Link>
             </div>
           </div>
