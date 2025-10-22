@@ -2,81 +2,107 @@ import React from "react";
 import "./personal.css";
 import { FaAddressCard, FaSchool } from "react-icons/fa6";
 import { educationInfo, personalInfo } from "@site/data/data";
+
 type Props = {};
 
-const PersonalInfo = () => {
+const PersonalInfo: React.FC = () => {
   return (
-    <div className="cols flex-center">
-      <div className="cols  flex-center personal-card gap-lg">
+    <section className="personal-container">
+      <article className="personal-card">
         <img
-          src={require("@site/static/muneer-maroon.jpg").default}
-          alt="Muneer"
-          className="muneer-img"
+          src={require("@site/static/img/muneer-maroon.jpg").default}
+          alt="Muneer Shafi - Professional Portrait"
+          className="personal-image"
+          loading="lazy"
         />
 
-        <div>
-          <h2 className="card-title">Personal Information</h2>
-          <div className="rows gap-0">
-            <p>
-              <strong>Name:</strong> {personalInfo.name}
-            </p>
-            <p>
-              <strong>Date of Birth:</strong> {personalInfo.dob}
-            </p>
-            <p>
-              <strong>Address:</strong> {personalInfo.address}
-            </p>
-            <p>
-              <strong>Email:</strong>{" "}
-              <a className="link" href={`mailto:${personalInfo.email}`}>
+        <div className="card-content">
+          <h2 className="card-title">
+            <FaAddressCard style={{ marginRight: "0.5rem" }} />
+            Personal Information
+          </h2>
+
+          <div className="personal-info-grid">
+            <div className="info-item">
+              <span className="info-label">Name</span>
+              <span className="info-value">{personalInfo.name}</span>
+            </div>
+
+            <div className="info-item">
+              <span className="info-label">Date of Birth</span>
+              <span className="info-value">{personalInfo.dob}</span>
+            </div>
+
+            <div className="info-item">
+              <span className="info-label">Address</span>
+              <span className="info-value">{personalInfo.address}</span>
+            </div>
+
+            <div className="info-item">
+              <span className="info-label">Email</span>
+              <a
+                className="info-link info-value"
+                href={`mailto:${personalInfo.email}`}
+                aria-label={`Send email to ${personalInfo.email}`}
+              >
                 {personalInfo.email}
               </a>
-            </p>
-            <p>
-              <strong>Phone:</strong>{" "}
-              <a className="link" href={`tel:${personalInfo.phone}`}>
+            </div>
+
+            <div className="info-item">
+              <span className="info-label">Phone</span>
+              <a
+                className="info-link info-value"
+                href={`tel:${personalInfo.phone}`}
+                aria-label={`Call ${personalInfo.phone}`}
+              >
                 {personalInfo.phone}
               </a>
-            </p>
+            </div>
           </div>
         </div>
-      </div>
+      </article>
+
       <Education />
-    </div>
+    </section>
   );
 };
 
-function Education({}: Props) {
+const Education: React.FC<Props> = () => {
   return (
-    <div className="cols  flex-center personal-card gap-lg">
+    <article className="personal-card">
       <img
         src={require("@site/static/img/university.jpg").default}
-        alt="university of kashmir"
-        className="muneer-img"
+        alt="University of Kashmir Campus"
+        className="personal-image"
+        loading="lazy"
       />
 
-      <div>
-        <h2 className="card-title">Education information</h2>
-        <div className="rows">
+      <div className="card-content">
+        <h2 className="card-title">
+          <FaSchool style={{ marginRight: "0.5rem" }} />
+          Education Information
+        </h2>
+
+        <div className="education-list">
           {educationInfo.map((education, index) => (
-            <div key={index}>
-              <p>
-                <strong className="cols p-0 align-center">
-                  <FaSchool size={20} />
-                  {education.college}
-                </strong>
-              </p>
-              <i>{education.degree}</i>
-              <br />
-              <i>
-                {education.yearOfPassing} {education.mode}
-              </i>
+            <div key={index} className="education-item">
+              <div className="education-header">
+                <FaSchool className="education-icon" size={20} />
+                <h3 className="college-name">{education.college}</h3>
+              </div>
+
+              <p className="degree-info">{education.degree}</p>
+
+              <div className="year-mode">
+                {education.yearOfPassing} • {education.mode}
+              </div>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </article>
   );
-}
+};
 
 export default PersonalInfo;
