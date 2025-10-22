@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import GidsBangalorePage from "../banglore";
 import "./travel.css";
-
 
 const TravelPage: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
