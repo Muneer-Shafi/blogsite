@@ -9,7 +9,7 @@ const PersonalInfo = () => {
     <div className="cols flex-center">
       <div className="cols  flex-center personal-card gap-lg">
         <img
-          src={require("@site/static/img/brown_muneer.jpg").default}
+          src={require("@site/static/muneer-maroon.jpg").default}
           alt="Muneer"
           className="muneer-img"
         />
