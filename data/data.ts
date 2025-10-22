@@ -1,4 +1,12 @@
-export { personalInfo,otherSkills, educationInfo,frontendSkills,backendSkills };
+export {
+  personalInfo,
+  otherSkills,
+  educationInfo,
+  frontendSkills,
+  backendSkills,
+  socialLinks,
+};
+
 const personalInfo = {
   name: "Muneer Shafi",
   dob: "March 3, 1997",
@@ -6,6 +14,39 @@ const personalInfo = {
   email: "mcamuneershafi@gmail.com",
   phone: "+919906403770",
 };
+
+const socialLinks = [
+  {
+    name: "GitHub",
+    url: "https://github.com/Muneer-Shafi",
+    icon: "github",
+    color: "#333",
+  },
+  {
+    name: "LinkedIn",
+    url: "https://linkedin.com/in/muneer-shafi",
+    icon: "linkedin",
+    color: "#0077b5",
+  },
+  {
+    name: "Twitter",
+    url: "https://twitter.com/zahid__muneer",
+    icon: "twitter",
+    color: "#1da1f2",
+  },
+  {
+    name: "Instagram",
+    url: "https://instagram.com/muneer__shafi",
+    icon: "instagram",
+    color: "#e4405f",
+  },
+  {
+    name: "Email",
+    url: "mailto:mcamuneershafi@gmail.com",
+    icon: "envelope",
+    color: "#ea4335",
+  },
+];
 
 const educationInfo = [
   {
@@ -38,14 +79,12 @@ const backendSkills = [
   { name: "RESTful APIs", level: 70 },
 ];
 
-const otherSkills =[
-    {name:'SQL'},
-    {name:'PostgreSQL'},
-    {name:'Docker'},
-    {name:'Git and Github'},
-    {name:'Test Driven Development'},
-    {name:'Agile Methodologies'},
-    {name:'Jira'},
-
-
-]
+const otherSkills = [
+  { name: "SQL" },
+  { name: "PostgreSQL" },
+  { name: "Docker" },
+  { name: "Git and Github" },
+  { name: "Test Driven Development" },
+  { name: "Agile Methodologies" },
+  { name: "Jira" },
+];
