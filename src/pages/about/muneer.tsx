@@ -49,8 +49,8 @@ export default function AboutMuneer({}: Props) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setAnimatedStats({
-        projects: 50,
-        clients: 15,
+        projects: 10,
+        clients: 10,
         experience: experienceYears,
         coffee: 500,
       });
