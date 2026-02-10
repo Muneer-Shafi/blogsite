@@ -101,6 +101,11 @@ const config: Config = {
           position: "left",
         },
         {
+          to: "/laracon",
+          label: "Laracon",
+          position: "left",
+        },
+        {
           label: "About",
           position: "right",
           to: "/about/muneer",

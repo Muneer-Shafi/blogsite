@@ -156,10 +156,6 @@ const TravelPage: React.FC = () => {
             </div>
           </div>
         </section>
-        <section>
-          <GidsBangalorePage />
-        </section>
-
         {/* Contact Section */}
         <section className="contact-section">
           <div className="container">
