@@ -10,9 +10,12 @@ export {
 const personalInfo = {
   name: "Muneer Shafi",
   dob: "March 3, 1997",
-  address: "Pampore, Jammu and Kashmir, India",
+  address: "India",
   email: "mcamuneershafi@gmail.com",
   phone: "+919906403770",
+  title: "Senior Software Engineer",
+  summary:
+    "Senior Software Engineer with 5+ years of experience in Symfony, building large-scale ERP and logistics platforms. Strong expertise in Domain-Driven Design (DDD) and Test-Driven Development (TDD) with a focus on clean architecture, scalability, and long-term maintainability.",
 };
 
 const socialLinks = [
@@ -24,21 +27,9 @@ const socialLinks = [
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/muneer-shafi",
+    url: "https://www.linkedin.com/in/muneer-shafi-618093190/",
     icon: "linkedin",
     color: "#0077b5",
-  },
-  {
-    name: "Twitter",
-    url: "https://twitter.com/zahid__muneer",
-    icon: "twitter",
-    color: "#1da1f2",
-  },
-  {
-    name: "Instagram",
-    url: "https://instagram.com/muneer__shafi",
-    icon: "instagram",
-    color: "#e4405f",
   },
   {
     name: "Email",
@@ -51,40 +42,46 @@ const socialLinks = [
 const educationInfo = [
   {
     college: "University of Kashmir",
-    degree: "Masters in Computer Applications",
-    yearOfPassing: "March 2021",
-    university: "University of Kashmir",
-    mode: "Regular",
-  },
-  {
-    college: "University of Kashmir",
-    degree: "Bachelors in Computer Applications",
-    yearOfPassing: "June 2017",
+    degree: "Master of Computer Applications",
+    yearOfPassing: "2020",
     university: "University of Kashmir",
     mode: "Regular",
   },
 ];
 
 const frontendSkills = [
+  { name: "React.js with TypeScript", level: 90 },
   { name: "Html/Css", level: 90 },
-  { name: "JavaScript/Typescript", level: 85 },
-  { name: "React", level: 80 },
-  { name: "Bootstrap", level: 75 },
+  { name: "JavaScript/Typescript", level: 90 },
+  { name: "State Management", level: 85 },
 ];
 const backendSkills = [
-  { name: "Php (symfony) ", level: 90 },
-  { name: "Python (django)", level: 60 },
-  { name: "Node.js", level: 80 },
-  { name: "GraphQL", level: 70 },
-  { name: "RESTful APIs", level: 70 },
+  { name: "PHP 8+", level: 95 },
+  { name: "Symfony (5+ years)", level: 95 },
+  { name: "Domain-Driven Design (DDD)", level: 90 },
+  { name: "Test-Driven Development (TDD)", level: 90 },
+  { name: "RESTful APIs", level: 90 },
+  { name: "Doctrine ORM/DBAL", level: 85 },
+  { name: "PostgreSQL/MySQL", level: 85 },
+  { name: "GenAI & LLM Development", level: 85 },
 ];
 
 const otherSkills = [
-  { name: "SQL" },
+  { name: "MySQL" },
   { name: "PostgreSQL" },
+  { name: "Redis" },
   { name: "Docker" },
-  { name: "Git and Github" },
+  { name: "CI/CD Pipelines" },
+  { name: "Git" },
   { name: "Test Driven Development" },
-  { name: "Agile Methodologies" },
-  { name: "Jira" },
+  { name: "Clean Architecture" },
+  { name: "SOLID Principles" },
+  { name: "Microservices" },
+  { name: "Event-Driven Systems" },
+  { name: "Symfony Messenger" },
+  { name: "API Platform" },
+  { name: "Symfony AI Bundle" },
+  { name: "Claude API Integration" },
+  { name: "Prompt Engineering" },
+  { name: "RAG Architectures" },
 ];

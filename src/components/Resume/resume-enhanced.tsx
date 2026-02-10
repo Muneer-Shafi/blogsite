@@ -37,7 +37,7 @@ const Education = () => {
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     items.forEach((item) => observer.observe(item));
@@ -54,7 +54,7 @@ const Education = () => {
       <div className="education-item">
         <div className="education-header">
           <div>
-            <h3 className="degree-title">Master's in Computer Application</h3>
+            <h3 className="degree-title">Master of Computer Applications</h3>
             <div className="university-name">
               <MdSchool />
               University of Kashmir
@@ -62,49 +62,16 @@ const Education = () => {
           </div>
           <div className="education-date">
             <FaCalendar />
-            2017 - 2021
+            2020
           </div>
         </div>
 
         <div className="education-details">
           <p>
-            Completed Master's degree with specialization in software
-            development and system architecture, graduating with honors.
+            Completed Master's degree in Computer Applications, focusing on
+            software development, system architecture, and enterprise
+            application design patterns.
           </p>
-
-          <div className="certifications">
-            <h4 className="certifications-title">
-              Professional Certifications
-            </h4>
-            <ul className="cert-list">
-              <li className="cert-item">
-                <FaCertificate />
-                <span className="cert-text">
-                  <span className="cert-highlight">
-                    Advanced PHP Development
-                  </span>{" "}
-                  - University of Kashmir{" "}
-                  <span className="cert-grade">A++</span>
-                </span>
-              </li>
-              <li className="cert-item">
-                <FaCertificate />
-                <span className="cert-text">
-                  <span className="cert-highlight">
-                    Python & Machine Learning Certification
-                  </span>
-                </span>
-              </li>
-              <li className="cert-item">
-                <FaCertificate />
-                <span className="cert-text">
-                  <span className="cert-highlight">
-                    Advanced SQL Database Management
-                  </span>
-                </span>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
 
@@ -112,11 +79,11 @@ const Education = () => {
         <div className="education-header">
           <div>
             <h3 className="degree-title">
-              Technical Workshops & Specializations
+              Technical Expertise & Specializations
             </h3>
             <div className="university-name">
               <FaMedal />
-              Various Industry Programs
+              Professional Development
             </div>
           </div>
           <div className="education-date">
@@ -127,38 +94,63 @@ const Education = () => {
 
         <div className="education-details">
           <p>
-            Continuously enhancing technical knowledge through specialized
-            training and industry workshops.
+            Continuously enhancing technical knowledge through industry
+            experience, specialized training, and emerging technologies.
           </p>
 
           <div className="certifications">
-            <h4 className="certifications-title">Key Specializations</h4>
+            <h4 className="certifications-title">Key Expertise Areas</h4>
             <ul className="cert-list">
               <li className="cert-item">
                 <FaCertificate />
                 <span className="cert-text">
                   <span className="cert-highlight">
-                    Enterprise Architecture Patterns
+                    Domain-Driven Design (DDD)
                   </span>{" "}
-                  - System Design Workshop
+                  - Enterprise Architecture
                 </span>
               </li>
               <li className="cert-item">
                 <FaCertificate />
                 <span className="cert-text">
                   <span className="cert-highlight">
-                    React Advanced Patterns
+                    Test-Driven Development (TDD)
                   </span>{" "}
-                  - Frontend Masters
+                  - Quality Assurance & Reliability
                 </span>
               </li>
               <li className="cert-item">
                 <FaCertificate />
                 <span className="cert-text">
                   <span className="cert-highlight">
-                    Cloud Infrastructure & DevOps
+                    GenAI & LLM Integration
                   </span>{" "}
-                  - AWS Certified
+                  - Claude API & Prompt Engineering
+                </span>
+              </li>
+              <li className="cert-item">
+                <FaCertificate />
+                <span className="cert-text">
+                  <span className="cert-highlight">
+                    Symfony Advanced Patterns
+                  </span>{" "}
+                  - DependencyInjection, Messenger, Security
+                </span>
+              </li>
+              <li className="cert-item">
+                <FaCertificate />
+                <span className="cert-text">
+                  <span className="cert-highlight">React with TypeScript</span>{" "}
+                  - State Management & Component Architecture
+                </span>
+              </li>
+              <li className="cert-item">
+                <FaCertificate />
+                <span className="cert-text">
+                  <span className="cert-highlight">
+                    Clean Architecture & SOLID Principles
+                  </span>{" "}
+                  - Scalable System Design
                 </span>
               </li>
             </ul>
@@ -175,10 +167,10 @@ export default function Resume({}: ResumeProps) {
       <header className="header">
         <h1>MUNEER SHAFI</h1>
         <div className="subtitle">
-          Senior software engineer | Architect of Scalable Web Solutions
+          Senior Software Engineer | Architect of Scalable Enterprise Systems
           <br />
-          Specialized in React, GraphQL, PHP Symfony, and Modern Web
-          Technologies
+          Specialized in Domain-Driven Design, Symfony, React, GenAI & LLM
+          Development
         </div>
       </header>
 
@@ -197,30 +189,32 @@ export default function Resume({}: ResumeProps) {
           </span>
         </a>
         <span>
-          <FaLocationArrow /> Kashmir, India 191103
+          <FaLocationArrow /> India
         </span>
       </div>
 
       <section className="section">
         <h2 className="cols">Professional Summary</h2>
         <p>
-          Dynamic and results-driven Software engineer with extensive experience
-          in building enterprise-level applications. Specializing in modern web
-          technologies and architectural patterns, I bring a proven track record
-          of delivering innovative solutions that drive business growth. Expert
-          in creating scalable applications using React, PHP Symfony, and
-          GraphQL, with a strong focus on code quality and performance
-          optimization.
+          Senior Software Engineer with 5+ years of experience in Symfony,
+          building large-scale ERP and logistics platforms. Strong expertise in
+          Domain-Driven Design (DDD) and Test-Driven Development (TDD) with a
+          focus on clean architecture, scalability, and long-term
+          maintainability. Highly experienced in API-first backend systems,
+          React with TypeScript, and deep knowledge of Symfony components.
+          Recently worked on GenAI and LLM-based solutions, including an
+          AI-powered chatbot integrated into an ERP system using modern AI
+          application patterns.
         </p>
       </section>
 
       <section className="section">
         <h2 className="cols">Professional Experience</h2>
         <div className="experience-item">
-          <h3 className="job-title">Senior Software engineer</h3>
+          <h3 className="job-title">Senior Software Engineer</h3>
           <div className="company-info">
             <span>
-              <FaBuilding /> Qbil Software | Srinagar, India
+              <FaBuilding /> Qbil-Trade | Netherlands
             </span>
             <span>
               <FaCalendar />
@@ -228,60 +222,73 @@ export default function Resume({}: ResumeProps) {
             </span>
           </div>
           <p>
-            Leading development of enterprise-grade ERP solutions for
-            international trade and logistics, serving diverse industries
-            including oils, dairy, and chemical raw materials.
+            Architected and developed enterprise-grade ERP and logistics systems
+            using Symfony. Applied DDD principles to model complex business
+            domains and designed high-performance, secure APIs. Led adoption of
+            TDD, improving system reliability. Designed and integrated
+            GenAI-powered chatbot into ERP workflows.
           </p>
           <ul className="bullet-points">
             <li>
-              Architected and implemented scalable backend solutions using PHP
-              Symfony, achieving 40% improvement in application performance
+              Architected and developed enterprise-grade ERP and logistics
+              systems using Symfony with multi-module architecture (inventory,
+              finance, procurement, reporting)
             </li>
             <li>
-              Developed sophisticated frontend interfaces using React and
-              GraphQL, resulting in 30% faster data loading times
+              Applied Domain-Driven Design (DDD) principles to model complex
+              business domains and bounded contexts
             </li>
             <li>
-              Engineered efficient database solutions using Doctrine ORM and
-              SQL, handling complex data relationships
+              Designed and implemented high-performance, secure APIs with
+              scalable architecture
             </li>
             <li>
-              Implemented advanced CSS architectures for maintainable and
-              responsive designs
+              Led adoption of Test-Driven Development (TDD), improving system
+              reliability and refactoring confidence
             </li>
             <li>
-              Led technical initiatives that reduced system downtime by 50%
-              through improved error handling and monitoring
+              Integrated React + TypeScript frontends with robust state
+              management
+            </li>
+            <li>
+              Implemented event-driven workflows using Symfony Messenger for
+              asynchronous processing
+            </li>
+            <li>
+              Designed and integrated GenAI-powered chatbot into ERP workflows,
+              enabling natural-language interaction with ERP data
+            </li>
+            <li>
+              Took ownership of architecture decisions and critical modules
+              across the platform
             </li>
           </ul>
         </div>
 
         <div className="experience-item">
-          <h3 className="job-title">Software Engineer Team Lead</h3>
+          <h3 className="job-title">Software Engineer</h3>
           <div className="company-info">
             <span>
-              <FaBuilding /> Cloud Innovation Partners | Srinagar, India
+              <FaBuilding /> Cloud Innovation Partners | UK
             </span>
             <span>
-              <FaCalendar /> 11/2020 - 11/2021
+              <FaCalendar /> 2020 - Nov 2021
             </span>
           </div>
           <p>
-            Led development initiatives at a security-focused innovation
-            company, driving technical excellence and team growth.
+            Developed ERP and logistics modules using Symfony. Built RESTful
+            APIs, integrated third-party services, and contributed to system
+            modernization with focus on TDD and best practices.
           </p>
           <ul className="bullet-points">
+            <li>Developed ERP and logistics modules using Symfony framework</li>
+            <li>Built RESTful APIs and integrated third-party services</li>
             <li>
-              Successfully led and mentored a team of 7 full-stack developers,
-              implementing Agile methodologies
+              Contributed to system modernization and legacy code refactoring
             </li>
+            <li>Applied automated testing and Symfony best practices</li>
             <li>
-              Designed and implemented automated database maintenance solutions,
-              improving system reliability
-            </li>
-            <li>
-              Developed modern, responsive user interfaces using React and
-              Symfony, enhancing user experience
+              Collaborated with cross-functional teams on feature development
             </li>
           </ul>
         </div>
